@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Akila ♥ Vinod · Wedding Invitation</title>
+<meta name="description" content="Akilandeswari & Vinod Kumar — Wedding on Wednesday, 11 November 2026 at KM Palace, Kundrathur, Chennai.">
+<meta name="theme-color" content="#4a1218">
+<!-- Link preview (WhatsApp / Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Akila ♥ Vinod · Wedding Invitation">
+<meta property="og:description" content="11 · 11 · 2026 · KM Palace, Chennai. With the blessings of our elders, we invite you to our wedding.">
+<meta property="og:image" content="https://akilaluna.github.io/wedding-invitation/assets/couple.jpg">
+<meta property="og:url" content="https://akilaluna.github.io/wedding-invitation/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235a1a1f'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23e6c77a' font-family='serif'%3EA%E2%99%A5V%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cinzel:wght@500;600;700&family=Noto+Serif+Tamil:wght@400;500;600;700&family=Kavivanar&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --maroon: #5a1a1f;
+    --maroon-deep: #3a0d12;
+    --maroon-soft: #7a3b35;
+    --gold: #b8893a;
+    --gold-light: #e6c77a;
+    --gold-deep: #8a6420;
+    --cream: #fdf6e3;
+    --cream-2: #f7ead0;
+    --rose: #c2185b;
+    --leaf: #3f6b2a;
+    --marigold: #f29b1d;
+    --topbar: 56px;
+    --navbar: 64px;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--maroon-deep);
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(230,199,122,.12), transparent 40%),
+      radial-gradient(circle at 80% 90%, rgba(194,24,91,.15), transparent 45%);
+    color: var(--maroon);
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-variant-numeric: lining-nums;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body:not(.lang-ta) .ta { display: none !important; }
+  body.lang-ta .en { display: none !important; }
+  .ta, .ta * { font-family: 'Noto Serif Tamil', serif; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  a { color: inherit; }
+
+  /* ---------- App frame ---------- */
+  .app {
+    position: fixed; inset: 0;
+    max-width: 480px; margin: 0 auto;
+    display: flex; flex-direction: column;
+    background: var(--cream);
+    box-shadow: 0 0 60px rgba(0,0,0,.45);
+  }
+  .topbar {
+    height: var(--topbar); flex: none;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 14px; padding-top: env(safe-area-inset-top);
+    background: var(--maroon); color: var(--gold-light);
+    border-bottom: 2px solid var(--gold);
+    position: relative; z-index: 5;
+  }
+  .monogram { font-family: 'Great Vibes', cursive; font-size: 28px; line-height: 1; letter-spacing: 1px; }
+  .monogram b { font-family: serif; font-weight: 400; font-size: 16px; color: #ff8a9a; margin: 0 4px; vertical-align: 4px; }
+  .top-actions { display: flex; gap: 8px; align-items: center; }
+  .pill {
+    height: 34px; padding: 0 12px; border-radius: 999px;
+    border: 1px solid rgba(230,199,122,.6); color: var(--gold-light);
+    display: inline-flex; align-items: center; gap: 6px; font-size: 14px;
+    font-family: 'Cinzel', serif; font-weight: 600; letter-spacing: .5px;
+  }
+  .pill .ta-label { font-family: 'Noto Serif Tamil', serif; font-weight: 600; letter-spacing: 0; }
+  .pill:active { transform: scale(.96); }
+  .icon-btn { width: 34px; padding: 0; justify-content: center; }
+  .icon-btn svg { width: 18px; height: 18px; fill: currentColor; }
+  .icon-btn.playing .eq i { animation: eq 1s infinite ease-in-out; }
+  .eq { display: inline-flex; gap: 2px; align-items: flex-end; height: 14px; }
+  .eq i { width: 3px; height: 4px; background: currentColor; border-radius: 1px; }
+  .eq i:nth-child(2) { animation-delay: .2s !important; }
+  .eq i:nth-child(3) { animation-delay: .4s !important; }
+  @keyframes eq { 0%,100% { height: 4px } 50% { height: 14px } }
+  .icon-btn:not(.playing) .eq i { height: 4px; }
+
+  /* ---------- Slider ---------- */
+  .viewport { flex: 1; position: relative; overflow: hidden; touch-action: pan-y; }
+  .track { display: flex; height: 100%; will-change: transform; transition: transform .55s cubic-bezier(.22,.8,.24,1); }
+  .track.dragging { transition: none; }
+  .slide { flex: 0 0 100%; height: 100%; position: relative; padding: 14px; }
+  .card {
+    height: 100%; position: relative;
+    background:
+      radial-gradient(ellipse at top, rgba(230,199,122,.25), transparent 60%),
+      linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+    border: 1.5px solid var(--gold);
+    outline: 1px solid rgba(184,137,58,.5); outline-offset: -7px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .card-inner {
+    height: 100%; overflow-y: auto; overscroll-behavior: contain;
+    padding: 34px 26px 30px;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    scrollbar-width: thin; scrollbar-color: rgba(184,137,58,.5) transparent;
+  }
+  .card-inner > .center { margin: auto 0; width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .corner { position: absolute; width: 58px; height: 58px; color: var(--gold); pointer-events: none; z-index: 1; }
+  .corner.tl { top: 3px; left: 3px; }
+  .corner.tr { top: 3px; right: 3px; transform: scaleX(-1); }
+  .corner.bl { bottom: 3px; left: 3px; transform: scaleY(-1); }
+  .corner.br { bottom: 3px; right: 3px; transform: scale(-1,-1); }
+
+  /* ---------- Typography ---------- */
+  .eyebrow { font-family: 'Cinzel', serif; font-weight: 600; font-size: 12px; letter-spacing: 3.5px; color: var(--gold-deep); text-transform: uppercase; }
+  .eyebrow.ta { font-family: 'Kavivanar', 'Noto Serif Tamil', serif; letter-spacing: .5px; font-size: 16px; text-transform: none; }
+  .script { font-family: 'Italianno', cursive; font-weight: 400; line-height: .95; color: var(--maroon); }
+  .script.ta { font-family: 'Kavivanar', serif; line-height: 1.35; }
+  .h-xl { font-size: 70px; }
+  .h-lg { font-size: 54px; }
+  .h-md { font-size: 42px; }
+  .script.ta.tname { font-family: 'Kavivanar', serif; line-height: 1.4; }
+  .ta.h-xl.tname { font-size: 44px; } .ta.h-lg.tname { font-size: 30px; white-space: nowrap; }
+  .ta.h-xl { font-size: 32px; } .ta.h-lg { font-size: 27px; } .ta.h-md { font-size: 23px; }
+  .lead { font-style: italic; font-weight: 600; font-size: 19px; line-height: 1.45; color: var(--maroon-soft); margin: 0; }
+  .lead.ta { font-style: normal; font-weight: 500; font-size: 15px; line-height: 1.85; }
+  .body-ta { font-family: 'Noto Serif Tamil', serif; font-size: 14px; line-height: 1.95; color: var(--maroon-soft); text-align: center; margin: 0; }
+  .body-ta strong { color: var(--maroon); font-weight: 700; }
+  .deity { font-style: italic; font-weight: 600; font-size: 16px; color: var(--maroon-soft); }
+  .deity.ta { font-style: normal; font-size: 14px; font-weight: 600; }
+  .pillaiyar { font-family: 'Noto Serif Tamil', serif; font-size: 30px; color: var(--maroon); line-height: 1; margin-bottom: 6px; }
+  .cinzel { font-family: 'Cinzel', serif; font-weight: 700; letter-spacing: 2px; }
+  .muted { color: var(--maroon-soft); }
+  .gap-s { height: 8px; } .gap-m { height: 16px; } .gap-l { height: 26px; }
+
+  .divider { display: flex; align-items: center; justify-content: center; gap: 10px; width: 78%; margin: 14px auto; color: var(--gold); }
+  .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
+  .divider::after { background: linear-gradient(270deg, transparent, var(--gold)); }
+  .divider svg { width: 30px; height: 18px; flex: none; }
+
+  /* ---------- Cover ---------- */
+  .thoranam { position: absolute; top: 0; left: 0; right: 0; height: 46px; z-index: 2; pointer-events: none; }
+  .cover .card-inner { padding-top: 58px; }
+  .names-big { display: flex; flex-direction: column; align-items: center; }
+  .names-big .amp { font-family: 'Great Vibes', cursive; font-size: 34px; color: var(--rose); margin: -6px 0; }
+  .date-badge {
+    margin-top: 14px; padding: 9px 20px;
+    border-top: 1px solid var(--gold); border-bottom: 1px solid var(--gold);
+    font-family: 'Cinzel', serif; font-weight: 700; letter-spacing: 3px; font-size: 18px; color: var(--maroon);
+  }
+  .place-line { font-family: 'Cinzel', serif; font-weight: 600; font-size: 13px; letter-spacing: 2.5px; color: var(--gold-deep); margin-top: 10px; }
+  .lamp { width: 44px; height: 60px; color: var(--gold); margin-top: 18px; }
+
+  /* ---------- Photo ---------- */
+  .photo-frame {
+    width: 100%; max-width: 330px; aspect-ratio: 1; margin: 14px auto 6px;
+    border-radius: 50% 50% 14px 14px / 42% 42% 14px 14px;
+    padding: 6px; background: linear-gradient(135deg, var(--gold-light), var(--gold-deep), var(--gold-light));
+    box-shadow: 0 12px 30px rgba(90,26,31,.25);
+  }
+  .photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: inherit; }
+
+  /* ---------- People ---------- */
+  .person-name { font-family: 'Italianno', cursive; font-size: 50px; line-height: 1; color: var(--maroon); }
+  .person-name.ta { font-family: 'Noto Serif Tamil', serif; font-size: 22px; font-weight: 700; line-height: 1.5; }
+  .degree { font-weight: 700; font-size: 15px; letter-spacing: .5px; color: var(--maroon-soft); }
+  .work { font-style: italic; font-size: 15px; color: var(--gold-deep); font-weight: 600; }
+  .work.ta { font-style: normal; font-size: 13px; }
+  .label { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; color: var(--gold-deep); font-weight: 600; margin-top: 14px; }
+  .label.ta { font-family: 'Kavivanar', serif; font-size: 14px; letter-spacing: 0; }
+  .val { font-size: 20px; font-weight: 600; color: var(--maroon); line-height: 1.35; }
+  .val.ta { font-size: 15px; line-height: 1.75; }
+  .with-word { font-family: 'Great Vibes', cursive; font-size: 30px; color: var(--rose); margin: 6px 0; }
+  .with-word.ta { font-family: 'Kavivanar', serif; font-size: 16px; color: var(--maroon-soft); }
+
+  /* ---------- Events ---------- */
+  .event-icon { width: 64px; height: 64px; color: var(--gold); margin-bottom: 4px; }
+  .big-date { display: flex; align-items: center; gap: 14px; margin: 10px 0 4px; font-family: 'Cinzel', serif; color: var(--maroon); }
+  .big-date .d { font-size: 54px; font-weight: 700; line-height: 1; }
+  .big-date .side { display: flex; flex-direction: column; font-size: 13px; letter-spacing: 2.5px; font-weight: 600; padding: 4px 12px; border-left: 1px solid var(--gold); border-right: 1px solid var(--gold); }
+  .big-date .side.ta { font-family: 'Noto Serif Tamil', serif; letter-spacing: 0; font-size: 13px; }
+  .time { font-style: italic; font-weight: 600; font-size: 19px; color: var(--maroon-soft); }
+  .time.ta { font-style: normal; font-size: 15px; }
+  .venue { font-family: 'Cinzel', serif; font-weight: 700; font-size: 20px; letter-spacing: 1.5px; color: var(--maroon); margin-top: 12px; line-height: 1.3; }
+  .venue.ta { font-family: 'Noto Serif Tamil', serif; font-size: 17px; letter-spacing: 0; }
+  .address { font-size: 16px; line-height: 1.45; color: var(--maroon-soft); font-weight: 500; max-width: 330px; }
+  .address.ta { font-size: 13.5px; line-height: 1.8; }
+  .map-row { display: flex; align-items: center; gap: 14px; margin-top: 18px; }
+  .qr { width: 92px; height: 92px; padding: 5px; background: #fff8dc; border: 1px solid var(--gold); border-radius: 6px; }
+  .qr img { width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 11px 18px; border-radius: 999px; text-decoration: none;
+    background: var(--maroon); color: var(--gold-light);
+    font-family: 'Cinzel', serif; font-weight: 600; font-size: 13px; letter-spacing: 1px;
+    box-shadow: 0 6px 16px rgba(90,26,31,.25); border: 1px solid var(--gold);
+  }
+  .btn .ta { font-family: 'Noto Serif Tamil', serif; letter-spacing: 0; font-size: 13px; }
+  .btn.ghost { background: transparent; color: var(--maroon); box-shadow: none; }
+  .btn svg { width: 16px; height: 16px; fill: currentColor; flex: none; }
+  .btn:active { transform: translateY(1px); }
+  .scan { font-size: 13px; font-style: italic; color: var(--gold-deep); margin-top: 6px; }
+  .scan.ta { font-style: normal; font-size: 12px; }
+  .stack { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+
+  /* ---------- Countdown ---------- */
+  .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; width: 100%; max-width: 340px; margin: 18px 0 6px; }
+  .cd { background: var(--maroon); color: var(--gold-light); border-radius: 8px; padding: 10px 2px 8px; border: 1px solid var(--gold); }
+  .cd b { display: block; font-family: 'Cinzel', serif; font-size: 26px; font-weight: 700; line-height: 1.1; }
+  .cd span { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-family: 'Cinzel', serif; }
+  .cd span.ta { font-family: 'Noto Serif Tamil', serif; text-transform: none; letter-spacing: 0; font-size: 11px; }
+  .cal-row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 12px; }
+  .married-msg { font-family: 'Great Vibes', cursive; font-size: 34px; color: var(--rose); margin-top: 12px; }
+
+  /* ---------- Family ---------- */
+  .fam-group { width: 100%; margin-top: 12px; }
+  .fam-group .label { margin-top: 0; margin-bottom: 4px; }
+  .fam-list { list-style: none; margin: 0; padding: 0; font-size: 16px; line-height: 1.55; color: var(--maroon); font-weight: 600; }
+  .fam-list.ta { font-size: 13.5px; line-height: 1.9; font-weight: 500; }
+  .fam-list small { color: var(--maroon-soft); font-weight: 500; }
+
+  /* ---------- Bottom nav ---------- */
+  .navbar {
+    height: var(--navbar); flex: none; padding-bottom: env(safe-area-inset-bottom);
+    display: flex; align-items: center; justify-content: space-between; gap: 6px;
+    padding-left: 10px; padding-right: 10px;
+    background: var(--maroon); color: var(--gold-light); border-top: 2px solid var(--gold);
+  }
+  .arrow { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(230,199,122,.55); display: grid; place-items: center; color: var(--gold-light); }
+  .arrow svg { width: 18px; height: 18px; fill: currentColor; }
+  .arrow:disabled { opacity: .3; cursor: default; }
+  .nav-mid { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; min-width: 0; }
+  .dots { display: flex; gap: 7px; }
+  .dots button { width: 8px; height: 8px; border-radius: 50%; background: rgba(230,199,122,.35); padding: 0; transition: all .3s; }
+  .dots button.on { background: var(--gold-light); width: 22px; border-radius: 6px; }
+  .slide-label { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; opacity: .85; white-space: nowrap; }
+  .slide-label.ta { font-family: 'Noto Serif Tamil', serif; letter-spacing: 0; font-size: 12px; }
+
+  .swipe-hint {
+    position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%);
+    background: rgba(58,13,18,.88); color: var(--gold-light); border: 1px solid var(--gold);
+    padding: 8px 16px; border-radius: 999px; font-size: 13px; font-family: 'Cinzel', serif; letter-spacing: 1px;
+    display: flex; align-items: center; gap: 8px; z-index: 4; pointer-events: none; white-space: nowrap;
+    opacity: 0; transition: opacity .5s;
+  }
+  .swipe-hint.show { opacity: 1; }
+  .swipe-hint .hand { display: inline-block; animation: nudge 1.4s infinite; }
+  .swipe-hint .ta { font-family: 'Noto Serif Tamil', serif; letter-spacing: 0; }
+  @keyframes nudge { 0%,100% { transform: translateX(6px) } 50% { transform: translateX(-8px) } }
+
+  /* ---------- Reveal animation ---------- */
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .8s ease, transform .8s ease; }
+  .slide.active .reveal { opacity: 1; transform: none; }
+  .slide.active .reveal.d1 { transition-delay: .12s; }
+  .slide.active .reveal.d2 { transition-delay: .26s; }
+  .slide.active .reveal.d3 { transition-delay: .4s; }
+  .slide.active .reveal.d4 { transition-delay: .54s; }
+  .slide.active .reveal.d5 { transition-delay: .68s; }
+
+  /* ---------- Petals ---------- */
+  .petals { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 3; }
+  .petal { position: absolute; top: -20px; width: 12px; height: 10px; border-radius: 80% 0 80% 0; opacity: .55; animation: fall linear infinite; }
+  @keyframes fall {
+    0% { transform: translate(0, -20px) rotate(0); }
+    50% { transform: translate(30px, 50vh) rotate(180deg); }
+    100% { transform: translate(-20px, 105vh) rotate(360deg); }
+  }
+
+  /* ---------- Opening screen ---------- */
+  .intro {
+    position: fixed; inset: 0; z-index: 20;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    padding: 30px 24px;
+    background: var(--maroon-deep);
+    background-image:
+      radial-gradient(circle at 50% 38%, rgba(230,199,122,.22), transparent 55%),
+      repeating-conic-gradient(from 0deg at 50% 38%, rgba(230,199,122,.05) 0 6deg, transparent 6deg 12deg);
+    color: var(--gold-light);
+    transition: transform 1s cubic-bezier(.7,0,.3,1), opacity 1s;
+  }
+  .intro.gone { transform: translateY(-100%); opacity: .6; pointer-events: none; }
+  .intro .seal {
+    width: 150px; height: 150px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(circle at 35% 30%, #8c2a33, var(--maroon) 60%, #2c0a0e);
+    border: 2px solid var(--gold); box-shadow: 0 0 0 6px rgba(230,199,122,.15), 0 18px 40px rgba(0,0,0,.5);
+    font-family: 'Great Vibes', cursive; font-size: 52px; color: var(--gold-light);
+    animation: glow 3s ease-in-out infinite;
+  }
+  .intro .seal b { font-family: serif; font-weight: 400; font-size: 22px; color: #ff8a9a; margin: 0 2px; }
+  @keyframes glow { 0%,100% { box-shadow: 0 0 0 6px rgba(230,199,122,.15), 0 18px 40px rgba(0,0,0,.5) } 50% { box-shadow: 0 0 0 12px rgba(230,199,122,.08), 0 18px 40px rgba(0,0,0,.5) } }
+  .intro .om { font-family: 'Noto Serif Tamil', serif; font-size: 26px; margin-bottom: 6px; }
+  .intro .blessing { font-family: 'Noto Serif Tamil', serif; font-size: 13px; opacity: .85; }
+  .intro .blessing-en { font-style: italic; font-size: 15px; opacity: .85; margin-bottom: 22px; }
+  .intro h1 { font-family: 'Italianno', cursive; font-weight: 400; font-size: 58px; margin: 20px 0 0; line-height: 1; }
+  .intro .idate { font-family: 'Cinzel', serif; font-weight: 600; letter-spacing: 4px; font-size: 15px; margin-top: 8px; }
+  .intro .choose { margin-top: 30px; display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 280px; }
+  .intro .choose button {
+    padding: 13px 18px; border-radius: 999px; border: 1px solid var(--gold);
+    background: linear-gradient(180deg, #e9cd84, #b8893a); color: var(--maroon-deep);
+    font-family: 'Cinzel', serif; font-weight: 700; letter-spacing: 1.5px; font-size: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  }
+  .intro .choose button.alt { background: transparent; color: var(--gold-light); box-shadow: none; }
+  .intro .choose button .ta { display: inline !important; font-family: 'Noto Serif Tamil', serif; letter-spacing: 0; font-size: 15px; }
+  .intro .note { margin-top: 18px; font-size: 13px; opacity: .65; font-style: italic; }
+
+  @media (min-width: 481px) {
+    .app { top: 16px; bottom: 16px; border-radius: 18px; overflow: hidden; border: 2px solid var(--gold); }
+  }
+  @media (max-height: 680px) {
+    .h-xl { font-size: 58px; } .photo-frame { max-width: 260px; }
+    .card-inner { padding-top: 26px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .track, .reveal, .intro { transition: none !important; }
+    .petals, .swipe-hint .hand, .intro .seal { animation: none !important; display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable ornaments -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="corner" viewBox="0 0 60 60">
+      <path d="M4 56 V22 Q4 4 22 4 H56" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M10 56 V26 Q10 10 26 10 H56" fill="none" stroke="currentColor" stroke-width=".7" opacity=".7"/>
+      <path d="M16 16 q8 -2 10 6 q-8 2 -10 -6z M16 16 q-2 8 6 10 q2 -8 -6 -10z" fill="currentColor" opacity=".85"/>
+      <circle cx="16" cy="16" r="2.2" fill="currentColor"/>
+      <circle cx="34" cy="10" r="1.3" fill="currentColor"/><circle cx="10" cy="34" r="1.3" fill="currentColor"/>
+    </symbol>
+    <symbol id="lotus" viewBox="0 0 40 24">
+      <path d="M20 22 C14 18 13 9 20 2 C27 9 26 18 20 22Z" fill="currentColor"/>
+      <path d="M20 22 C12 21 7 15 6 8 C13 9 18 14 20 22Z" fill="currentColor" opacity=".75"/>
+      <path d="M20 22 C28 21 33 15 34 8 C27 9 22 14 20 22Z" fill="currentColor" opacity=".75"/>
+      <path d="M20 22 C11 23 3 20 0 15 C8 13 15 17 20 22Z" fill="currentColor" opacity=".5"/>
+      <path d="M20 22 C29 23 37 20 40 15 C32 13 25 17 20 22Z" fill="currentColor" opacity=".5"/>
+    </symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="cal" viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm-2 8h14v10H5V10zm2 2v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2z"/></symbol>
+    <pattern id="leaves" width="34" height="46" patternUnits="userSpaceOnUse">
+      <path d="M0 6 Q17 12 34 6" fill="none" stroke="#8a6420" stroke-width="1.2"/>
+      <path d="M17 9 C11 18 12 32 17 42 C22 32 23 18 17 9Z" fill="#3f6b2a"/>
+      <path d="M17 11 V40" stroke="#9cc27a" stroke-width=".7"/>
+      <circle cx="0" cy="7" r="4.2" fill="#f29b1d"/><circle cx="0" cy="7" r="2" fill="#e0701a"/>
+      <circle cx="34" cy="7" r="4.2" fill="#f29b1d"/><circle cx="34" cy="7" r="2" fill="#e0701a"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- Opening screen -->
+<div class="intro" id="intro">
+  <div class="om">உ</div>
+  <div class="blessing">அருள்மிகு சுந்தரராட்சி அம்மன் துணை</div>
+  <div class="blessing-en">Arulmigu Sundharachi Amman Thunai</div>
+  <div class="seal">A<b>♥</b>V</div>
+  <h1>Akila &amp; Vinod</h1>
+  <div class="idate">11 · 11 · 2026</div>
+  <div class="choose">
+    <button id="openBtn">Open Invitation</button>
+  </div>
+  <div class="note">♪ Best experienced with sound on</div>
+</div>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="monogram">A<b>♥</b>V</div>
+    <div class="top-actions">
+      <button class="pill" id="langBtn" aria-label="Change language">
+        <span class="en ta-label">தமிழ்</span><span class="ta">English</span>
+      </button>
+      <button class="pill icon-btn" id="musicBtn" aria-label="Play or pause music">
+        <span class="eq"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="viewport" id="viewport">
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    <div class="track" id="track">
+
+      <!-- 1. Cover -->
+      <section class="slide cover" data-en="Welcome" data-ta="வரவேற்பு">
+        <div class="card">
+          <svg class="thoranam" preserveAspectRatio="none"><rect width="100%" height="46" fill="url(#leaves)"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <div class="pillaiyar reveal">உ</div>
+            <div class="deity en reveal d1">Arulmigu Sundharachi Amman Thunai</div>
+            <div class="deity ta reveal d1">அருள்மிகு சுந்தரராட்சி அம்மன் துணை</div>
+            <div class="gap-m"></div>
+            <div class="eyebrow en reveal d1">The Wedding of</div>
+            <div class="eyebrow ta reveal d1" style="margin-bottom:10px;font-size:15px;line-height:1.6">திரு தங்கபாண்டி நாடார் – அழகுமணி அம்மாள்<br>இல்லத் திருமண அழைப்பிதழ்</div>
+            <div class="names-big en reveal d2">
+              <div class="script h-xl">Akila</div>
+              <div class="amp">♥</div>
+              <div class="script h-xl">Vinod</div>
+            </div>
+            <div class="names-big ta reveal d2">
+              <div class="script ta h-xl tname">அகிலா</div>
+              <div class="amp">♥</div>
+              <div class="script ta h-xl tname">வினோத்</div>
+            </div>
+            <div class="date-badge reveal d3">11 · 11 · 2026</div>
+            <div class="place-line en reveal d4">KM PALACE, CHENNAI</div>
+            <div class="place-line ta reveal d4" style="font-family:'Noto Serif Tamil',serif;letter-spacing:0">KM PALACE, சென்னை</div>
+            <svg class="lamp reveal d5" viewBox="0 0 44 60" aria-hidden="true">
+              <path d="M22 2 C17 9 18 15 22 17 C26 15 27 9 22 2Z" fill="#f29b1d"/>
+              <path d="M22 7 C20 11 20 14 22 15 C24 14 24 11 22 7Z" fill="#ffe08a"/>
+              <path d="M6 20 Q22 30 38 20 Q36 27 22 28 Q8 27 6 20Z" fill="currentColor"/>
+              <rect x="20" y="28" width="4" height="18" fill="currentColor"/>
+              <path d="M12 58 Q14 47 22 46 Q30 47 32 58Z" fill="currentColor"/>
+            </svg>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 2. Couple photo -->
+      <section class="slide" data-en="The Couple" data-ta="மணமக்கள்">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <div class="eyebrow en reveal">Two hearts · One forever</div>
+            <div class="eyebrow ta reveal">இரு மனம் · ஒரு வாழ்வு</div>
+            <div class="photo-frame reveal d1"><img src="assets/couple.jpg" alt="Akila and Vinod" loading="lazy"></div>
+            <div class="script en h-lg reveal d2">Akila <span style="font-family:'Great Vibes';color:var(--rose);font-size:.6em">&amp;</span> Vinod</div>
+            <div class="script ta h-lg tname reveal d2">அகிலா <span style="color:var(--rose);font-size:.7em">&amp;</span> வினோத்</div>
+            <p class="lead en reveal d3">“Two souls, one journey —<br>blessed by our families.”</p>
+            <p class="lead ta reveal d3">பெரியோர்களின் ஆசியுடன்<br>எங்கள் புதிய பயணம் தொடங்குகிறது</p>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 3. Invitation -->
+      <section class="slide" data-en="Invitation" data-ta="அழைப்பிதழ்">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner">
+            <!-- English -->
+            <div class="center en">
+              <div class="script h-lg reveal">Wedding Invitation</div>
+              <div class="divider reveal d1"><svg><use href="#lotus"/></svg></div>
+              <p class="lead reveal d1">With the blessings of our elders and the joy of our families, we request the honour of your presence as we begin our forever together</p>
+              <div class="gap-m"></div>
+              <div class="reveal d2">
+                <div class="degree">Selvi.</div>
+                <div class="person-name">P. Akilandeswari</div>
+                <div class="degree">B.E.,</div>
+              </div>
+              <div class="with-word reveal d3">with</div>
+              <div class="reveal d3">
+                <div class="degree">Selvan.</div>
+                <div class="person-name">L. Vinod Kumar</div>
+                <div class="degree">B.Com., MBA.,</div>
+              </div>
+              <div class="divider reveal d4"><svg><use href="#lotus"/></svg></div>
+              <p class="time reveal d4">on Wednesday, 11th November 2026<br>between 9.00 am – 10.30 am</p>
+              <div class="venue reveal d5" style="font-size:17px">at KM PALACE</div>
+              <div class="address reveal d5">Kundrathur, Chennai</div>
+            </div>
+            <!-- Tamil -->
+            <div class="center ta">
+              <div class="pillaiyar reveal">உ</div>
+              <div class="script ta h-lg reveal">திருமண அழைப்பிதழ்</div>
+              <div class="divider reveal d1"><svg><use href="#lotus"/></svg></div>
+              <p class="body-ta reveal d1" style="text-align:center"><strong>அன்புடையீர்,</strong></p>
+              <p class="body-ta reveal d2">எல்லாம் வல்ல இறைவன் திருவருளால் நிகழும் மங்களகரமான <strong>1202-ம் ஆண்டு பராபவ வருடம் ஐப்பசி மாதம் 25-ம் தேதி (11-11-2026) புதன் கிழமை</strong> அனுஷம் நட்சத்திரமும் சித்தயோகமும் கூடிய சுபயோக சுபதினத்தில் <strong>காலை 9.00 மணிக்கு மேல் 10.30 மணிக்குள்</strong> தனுசு லக்கனத்தில்</p>
+              <div class="gap-s"></div>
+              <p class="body-ta reveal d2">தூத்துக்குடி மாவட்டம் விஜயராமபுரம் தெய்வத்திரு சி. தங்கபாண்டி நாடார் அழகுமணி அம்மாள் மகன்வழிப் பௌத்திரியும் தூத்துக்குடி மாவட்டம் தேரிகுடியிருப்பு ம. பலவேசக்கண் நாடார் சின்னக்கனி அம்மாள் அவர்களின் மகள் வழி பௌத்திரியும் த. பிரபாகர் நாடார் லட்சுமி இவர்களின் திருநிறைச்செல்வி</p>
+              <div class="reveal d3" style="margin:10px 0">
+                <div class="person-name ta">P. அகிலாண்டேஷ்வரி <span class="degree">B.E.,</span></div>
+                <div class="work ta">(ITSS India Private Limited)</div>
+                <div class="with-word ta">என்கிற செல்விக்கும்</div>
+              </div>
+              <p class="body-ta reveal d3">திருநெல்வேலி மாவட்டம் கூடங்குளம் தெய்வத்திருவாளர்கள் A. சுப்பையா நாடார் S. தங்கலட்சுமி அம்மாள் அவர்களின் மகன்வழிப் பேரனும் தெய்வத்திரு P. தங்கராஜ் நாடார் T. ராமலட்சுமி அவர்களின் மகள்வழி பேரனும் திரு A.S. லிங்கசாமி நாடார் திருமதி L. ஜெயராணி அவர்களின் புதல்வனுமான திருநிறைச்செல்வன்</p>
+              <div class="reveal d4" style="margin:10px 0">
+                <div class="person-name ta">L. வினோத் குமார் <span class="degree">B.Com., MBA.,</span></div>
+                <div class="work ta">(JL Flyash Bricks)</div>
+                <div class="with-word ta">என்கிற செல்வனை</div>
+              </div>
+              <p class="body-ta reveal d4">திருமணம் செய்ய சான்றோர்களால் நிச்சயித்தவண்ணம் சென்னை-69, குன்றத்தூர், சிறுகளத்தூர் சாலையில் அமைந்துள்ள <strong>KM PALACE-ல்</strong> நடைபெறும் திருமணத்திற்கும் அதைசார்ந்த சகல வைபவங்களுக்கும் தாங்கள் தங்கள் சுற்றமும் நட்பும் சூழ வருகை தந்து மணமக்களை வாழ்த்தியருள அன்புடன் அழைக்கிறோம்.</p>
+              <div class="divider"><svg><use href="#lotus"/></svg></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Bride & Groom -->
+      <section class="slide" data-en="Bride &amp; Groom" data-ta="மணமகள் & மணமகன்">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <div class="reveal">
+              <div class="eyebrow en">The Bride</div>
+              <div class="eyebrow ta">மணமகள்</div>
+              <div class="person-name en">Akilandeswari P</div>
+              <div class="person-name ta">P. அகிலாண்டேஷ்வரி</div>
+              <div class="degree">B.E., <span class="work" style="font-size:14px">· ITSS India Pvt. Ltd.</span></div>
+              <div class="label en">DAUGHTER OF</div>
+              <div class="label ta">பெற்றோர்</div>
+              <div class="val en">Mr. T. Prabakar &amp; Mrs. P. Lakshmi</div>
+              <div class="val ta">திரு த. பிரபாகர் – திருமதி P. லட்சுமி</div>
+              <div class="label en">BROTHER</div>
+              <div class="label ta">சகோதரர்</div>
+              <div class="val en">P. Sivakesavan, B.E.,</div>
+              <div class="val ta">P. சிவகேசவன் B.E.,</div>
+            </div>
+            <div class="divider reveal d2"><svg><use href="#lotus"/></svg></div>
+            <div class="reveal d3">
+              <div class="eyebrow en">The Groom</div>
+              <div class="eyebrow ta">மணமகன்</div>
+              <div class="person-name en">Vinod Kumar L</div>
+              <div class="person-name ta">L. வினோத் குமார்</div>
+              <div class="degree">B.Com., MBA., <span class="work" style="font-size:14px">· JL Flyash Bricks</span></div>
+              <div class="label en">SON OF</div>
+              <div class="label ta">பெற்றோர்</div>
+              <div class="val en">Mr. A.S. Lingasamy &amp; Mrs. L. Jayarani</div>
+              <div class="val ta">திரு A.S. லிங்கசாமி – திருமதி L. ஜெயராணி</div>
+              <div class="label en">BROTHER &amp; CO-SISTER</div>
+              <div class="label ta">சகோதரர் &amp; அண்ணி</div>
+              <div class="val en">L. Jayasudhir &amp; J. Anandhanayaki</div>
+              <div class="val ta">L. ஜெயசுதிர் – J. ஆனந்தநாயகி</div>
+            </div>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 5. Muhurtham -->
+      <section class="slide" data-en="Muhurtham" data-ta="முகூர்த்தம்">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <div class="eyebrow en reveal">Save the Date</div>
+            <div class="eyebrow ta reveal">முகூர்த்த நாள்</div>
+            <div class="script en h-lg reveal d1">The Wedding</div>
+            <div class="script ta h-lg reveal d1">திருமணம்</div>
+            <div class="big-date reveal d2">
+              <div class="side en"><span>WED</span><span>NOV</span></div>
+              <div class="side ta"><span>புதன்</span><span>ஐப்பசி 25</span></div>
+              <div class="d">11</div>
+              <div class="side"><span>2026</span><span class="en">9 AM</span><span class="ta">காலை</span></div>
+            </div>
+            <div class="time en reveal d2">Muhurtham · 9.00 am – 10.30 am</div>
+            <div class="time ta reveal d2">காலை 9.00 – 10.30 மணி · தனுசு லக்னம்</div>
+
+            <div class="countdown reveal d3" id="countdown">
+              <div class="cd"><b data-cd="d">--</b><span class="en">Days</span><span class="ta">நாட்கள்</span></div>
+              <div class="cd"><b data-cd="h">--</b><span class="en">Hours</span><span class="ta">மணி</span></div>
+              <div class="cd"><b data-cd="m">--</b><span class="en">Mins</span><span class="ta">நிமிடம்</span></div>
+              <div class="cd"><b data-cd="s">--</b><span class="en">Secs</span><span class="ta">வினாடி</span></div>
+            </div>
+            <div class="married-msg" id="marriedMsg" hidden><span class="en">Just Married!</span><span class="ta" style="font-size:20px">திருமணம் இனிதே நடந்தது!</span></div>
+
+            <div class="venue reveal d4">KM PALACE</div>
+            <div class="address en reveal d4">Sriperumbudur – Kundrathur Highway, Sirukalathur Main Road, Kundrathur, Chennai – 600 069.</div>
+            <div class="address ta reveal d4">ஸ்ரீபெரும்புதூர் – குன்றத்தூர் நெடுஞ்சாலை, சிறுகளத்தூர் மெயின் ரோடு, குன்றத்தூர், சென்னை – 600 069.</div>
+            <div class="cal-row reveal d5">
+              <a class="btn" href="https://maps.app.goo.gl/hmMqf78U1DjGH6Jx9" target="_blank" rel="noopener"><svg><use href="#pin"/></svg><span class="en">Directions</span><span class="ta">வழி காட்டி</span></a>
+              <a class="btn ghost" id="gcal" target="_blank" rel="noopener"><svg><use href="#cal"/></svg><span class="en">Google Calendar</span><span class="ta">காலண்டர்</span></a>
+              <button class="btn ghost" id="icsBtn"><svg><use href="#cal"/></svg><span class="en">Apple / Outlook</span><span class="ta">Apple / Outlook</span></button>
+            </div>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 6. Engagement & Reception, Chennai -->
+      <section class="slide" data-en="Engagement" data-ta="நிச்சயதார்த்தம்">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <svg class="event-icon reveal" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="24" cy="38" r="14" fill="none" stroke="currentColor" stroke-width="3"/>
+              <circle cx="40" cy="38" r="14" fill="none" stroke="currentColor" stroke-width="3"/>
+              <path d="M32 6 l5 7 -5 7 -5 -7z" fill="var(--rose)"/>
+            </svg>
+            <div class="eyebrow en reveal">Chennai</div>
+            <div class="eyebrow ta reveal">சென்னை</div>
+            <div class="script en h-md reveal d1">Engagement &amp; Reception</div>
+            <div class="script ta h-md reveal d1">நிச்சயதார்த்தம் &amp; வரவேற்பு</div>
+            <div class="big-date reveal d2">
+              <div class="side en"><span>TUE</span><span>NOV</span></div>
+              <div class="side ta"><span>செவ்வாய்</span><span>நவம்பர்</span></div>
+              <div class="d">10</div>
+              <div class="side"><span>2026</span><span class="en">6 PM</span><span class="ta">மாலை</span></div>
+            </div>
+            <div class="time en reveal d2">Tuesday Evening, 6.00 pm onwards</div>
+            <div class="time ta reveal d2">செவ்வாய்க்கிழமை, மாலை 6.00 மணி முதல்</div>
+            <div class="venue reveal d3">KM PALACE</div>
+            <div class="address en reveal d3">Sriperumbudur – Kundrathur Highway, Sirukalathur Main Road, Kundrathur, Chennai – 600 069.</div>
+            <div class="address ta reveal d3">ஸ்ரீபெரும்புதூர் – குன்றத்தூர் நெடுஞ்சாலை, சிறுகளத்தூர் மெயின் ரோடு, குன்றத்தூர், சென்னை – 600 069.</div>
+            <div class="map-row reveal d4">
+              <div class="qr"><img src="assets/qr-chennai.png" alt="QR code: KM Palace location"></div>
+              <div class="stack">
+                <a class="btn" href="https://maps.app.goo.gl/hmMqf78U1DjGH6Jx9" target="_blank" rel="noopener"><svg><use href="#pin"/></svg><span class="en">Open in Maps</span><span class="ta">வரைபடம்</span></a>
+                <div class="scan en">Scan for directions</div>
+                <div class="scan ta">வழிக்கு ஸ்கேன் செய்யவும்</div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 7. Reception, Coimbatore -->
+      <section class="slide" data-en="Reception" data-ta="வரவேற்பு – கோவை">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <!-- jasmine-garland heart with a little rose -->
+            <svg class="event-icon reveal" viewBox="0 0 64 64" aria-hidden="true" style="width:56px;height:56px">
+              <path id="garlandHeart" d="M32 50 C16 39 10 31 10 23 C10 15.5 15.5 11 21.5 11 C26 11 29.5 13.5 32 17.5 C34.5 13.5 38 11 42.5 11 C48.5 11 54 15.5 54 23 C54 31 48 39 32 50Z" fill="none" stroke="currentColor" stroke-width="1"/>
+              <use href="#garlandHeart" stroke="currentColor" stroke-width="4.4" stroke-dasharray="0 5.6" stroke-linecap="round"/>
+              <use href="#garlandHeart" stroke="#fffaf0" stroke-width="3" stroke-dasharray="0 5.6" stroke-linecap="round"/>
+              <g transform="translate(32 51)">
+                <circle r="4.2" fill="var(--rose)"/>
+                <path d="M-2.2 -0.6 a2.2 2.2 0 1 1 4.4 0" fill="none" stroke="#ffd1dc" stroke-width=".9"/>
+                <circle r="1.2" fill="#ffd1dc"/>
+                <path d="M-4 1.8 q-4 1 -6 -1.6 q3.6 -1 6 1.6z M4 1.8 q4 1 6 -1.6 q-3.6 -1 -6 1.6z" fill="var(--leaf)"/>
+              </g>
+              <path d="M52 4 l1 3 3 1 -3 1 -1 3 -1 -3 -3 -1 3 -1z" fill="var(--gold-light)" stroke="currentColor" stroke-width=".5"/>
+              <path d="M10 6 l.7 2 2 .7 -2 .7 -.7 2 -.7 -2 -2 -.7 2 -.7z" fill="currentColor"/>
+              <path d="M28 27.5 c0-2 2.5-3 4 -1 c1.5-2 4-1 4 1 c0 2.5 -4 5 -4 5 s-4 -2.5 -4 -5z" fill="var(--rose)" opacity=".85"/>
+            </svg>
+            <div class="eyebrow en reveal">Coimbatore</div>
+            <div class="eyebrow ta reveal">கோயம்புத்தூர்</div>
+            <div class="script en h-lg reveal d1">Reception</div>
+            <div class="script ta h-md reveal d1">வரவேற்பு</div>
+            <div class="big-date reveal d2">
+              <div class="side en"><span>SUN</span><span>NOV</span></div>
+              <div class="side ta"><span>ஞாயிறு</span><span>நவம்பர்</span></div>
+              <div class="d">15</div>
+              <div class="side"><span>2026</span><span class="en">6 PM</span><span class="ta">மாலை</span></div>
+            </div>
+            <div class="time en reveal d2">Sunday Evening, 6.00 pm onwards</div>
+            <div class="time ta reveal d2">ஞாயிற்றுக்கிழமை, மாலை 6.00 மணி முதல்</div>
+            <div class="venue en reveal d3">JOTHIMANI PONNAIYAH<br>MARRIAGE HALL</div>
+            <div class="venue ta reveal d3">ஜோதிமணி பொன்னையா<br>திருமண மண்டபம்</div>
+            <div class="address en reveal d3">Edayarpalayam – Koundampalayam Road, Koundampalayam, Coimbatore – 641 025.</div>
+            <div class="address ta reveal d3">இடையர்பாளையம் – கவுண்டம்பாளையம் சாலை, கவுண்டம்பாளையம், கோயம்புத்தூர் – 641 025.</div>
+            <div class="map-row reveal d4">
+              <div class="qr"><img src="assets/qr-coimbatore.png" alt="QR code: Jothimani Ponnaiyah Marriage Hall location"></div>
+              <div class="stack">
+                <a class="btn" href="https://maps.app.goo.gl/1YDhpCL3k7GniJao9" target="_blank" rel="noopener"><svg><use href="#pin"/></svg><span class="en">Open in Maps</span><span class="ta">வரைபடம்</span></a>
+                <div class="scan en">Scan for directions</div>
+                <div class="scan ta">வழிக்கு ஸ்கேன் செய்யவும்</div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+      </section>
+
+      <!-- 8. Family -->
+      <section class="slide" data-en="With Love" data-ta="அன்புடன்">
+        <div class="card">
+          <svg class="corner tl"><use href="#corner"/></svg><svg class="corner tr"><use href="#corner"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner">
+            <!-- English -->
+            <div class="center en">
+              <div class="script h-md reveal">With Best Compliments</div>
+              <div class="divider reveal d1"><svg><use href="#lotus"/></svg></div>
+              <div class="fam-group reveal d1">
+                <div class="label">WITH LOVE</div>
+                <ul class="fam-list"><li>Mr. T. Prabakar &amp; Mrs. P. Lakshmi</li><li>P. Sivakesavan, B.E.,</li></ul>
+              </div>
+              <div class="fam-group reveal d2">
+                <div class="label">WITH REGARDS</div>
+                <ul class="fam-list"><li>Mr. T. Selvabaskar &amp; Mrs. S. Selvarani</li></ul>
+              </div>
+              <div class="fam-group reveal d2">
+                <div class="label">MATERNAL UNCLES</div>
+                <ul class="fam-list"><li>Mr. P. Sankaranarayanan &amp; Mrs. S. Dhanalakshmi</li><li>Mr. P. Asokaraj &amp; Mrs. A. Poovathi</li></ul>
+              </div>
+              <div class="fam-group reveal d3">
+                <div class="label">PERIYAPPA &amp; PERIYAMMA</div>
+                <ul class="fam-list">
+                  <li>R. Pandiyaraj – Saraswathi <small>· Coimbatore</small></li>
+                  <li>S. Stalin – Kasthuri <small>· Chennai</small></li>
+                  <li>C. Dhanushkodi – Visalatchi <small>· Dindigul</small></li>
+                </ul>
+              </div>
+              <div class="fam-group reveal d3">
+                <div class="label">ATHAI &amp; MAMA</div>
+                <ul class="fam-list">
+                  <li>N. Sisupalan – Selvarani <small>· Chennai</small></li>
+                  <li>S. Balasubramanian – Jayanthi Kokilavani <small>· Chennai</small></li>
+                </ul>
+              </div>
+              <div class="fam-group reveal d4">
+                <div class="label">CHITHAPPA &amp; CHITHI</div>
+                <ul class="fam-list">
+                  <li>T. Sivaprakash <small>· Coimbatore</small></li>
+                  <li>T. Sivasankar – Selvi <small>· Coimbatore</small></li>
+                  <li>T. Ramajeyam – Vasanthi <small>· Coimbatore</small></li>
+                  <li>T. Rajaram – Surya <small>· Coimbatore</small></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Tamil -->
+            <div class="center ta">
+              <div class="script ta h-md reveal">தங்கள் நல்வரவை<br>இனிதே விரும்பும்</div>
+              <div class="divider reveal d1"><svg><use href="#lotus"/></svg></div>
+              <div class="fam-group reveal d1">
+                <div class="label ta">தங்கள் அன்புள்ள</div>
+                <ul class="fam-list ta"><li>திரு த. பிரபாகர் – P. லட்சுமி அம்மாள்</li><li>P. சிவகேசவன் B.E.,</li></ul>
+              </div>
+              <div class="fam-group reveal d2">
+                <div class="label ta">அவ்வண்ணமே கோரும்</div>
+                <ul class="fam-list ta"><li>திரு T. செல்வபாஸ்கர் – S. செல்வராணி அம்மாள்</li></ul>
+              </div>
+              <div class="fam-group reveal d2">
+                <div class="label ta">தாய்மாமன்</div>
+                <ul class="fam-list ta"><li>திரு P. சங்கரநாராயணன் – S. தனலட்சுமி அம்மாள்</li><li>திரு P. அசோகராஜ் – A. பூவதி அம்மாள்</li></ul>
+              </div>
+              <div class="fam-group reveal d3">
+                <div class="label ta">பெரியம்மா – பெரியப்பா</div>
+                <ul class="fam-list ta">
+                  <li>திரு R. பாண்டியராஜ் – சரஸ்வதி, கோவை</li>
+                  <li>திரு S. ஸ்டாலின் – கஸ்தூரி, சென்னை</li>
+                  <li>திரு C. தனுஷ்கோடி – விசாலாட்சி, திண்டுக்கல்</li>
+                </ul>
+              </div>
+              <div class="fam-group reveal d3">
+                <div class="label ta">அத்தை – மாமா</div>
+                <ul class="fam-list ta">
+                  <li>திரு N. சிசுபாலன் – செல்வராணி, சென்னை</li>
+                  <li>திரு S. பாலசுப்பிரமணியன் – ஜெயந்தி கோகிலாவாணி, சென்னை</li>
+                </ul>
+              </div>
+              <div class="fam-group reveal d4">
+                <div class="label ta">சித்தப்பா – சித்தி</div>
+                <ul class="fam-list ta">
+                  <li>திரு T. சிவப்பிரகாஷ், கோவை</li>
+                  <li>திரு T. சிவசங்கர் – செல்வி, கோவை</li>
+                  <li>திரு T. ராமஜெயம் – வசந்தி, கோவை</li>
+                  <li>திரு T. ராஜாராம் – சூர்யா, கோவை</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Thank you -->
+      <section class="slide cover" data-en="Thank You" data-ta="நன்றி">
+        <div class="card">
+          <svg class="thoranam" preserveAspectRatio="none"><rect width="100%" height="46" fill="url(#leaves)"/></svg>
+          <svg class="corner bl"><use href="#corner"/></svg><svg class="corner br"><use href="#corner"/></svg>
+          <div class="card-inner"><div class="center">
+            <svg class="reveal" viewBox="0 0 40 24" style="width:60px;height:36px;color:var(--gold)"><use href="#lotus"/></svg>
+            <div class="gap-m"></div>
+            <p class="lead en reveal d1" style="font-size:22px">Your presence and blessings<br>are the greatest gift to us.</p>
+            <p class="lead ta reveal d1" style="font-size:17px">தங்கள் வருகையும் வாழ்த்துமே<br>எங்களுக்குச் சிறந்த பரிசு.</p>
+            <div class="gap-m"></div>
+            <div class="eyebrow en reveal d2">We can’t wait to celebrate with you</div>
+            <div class="eyebrow ta reveal d2">தங்கள் வருகையை எதிர்நோக்கும்</div>
+            <div class="script en h-xl reveal d3" style="margin-top:10px">Akila <span style="font-family:'Great Vibes';color:var(--rose);font-size:.5em">♥</span> Vinod</div>
+            <div class="script ta h-xl tname reveal d3" style="margin-top:10px">அகிலா <span style="color:var(--rose);font-size:.7em">♥</span> வினோத்</div>
+            <div class="date-badge reveal d4">11 · 11 · 2026</div>
+            <div class="cal-row reveal d5" style="margin-top:22px">
+              <button class="btn" id="shareBtn"><span class="en">Share Invitation</span><span class="ta">பகிர்க</span></button>
+              <button class="btn ghost" data-go="0"><span class="en">Back to Start</span><span class="ta">முதல் பக்கம்</span></button>
+            </div>
+          </div></div>
+        </div>
+      </section>
+
+    </div>
+    <div class="swipe-hint" id="swipeHint"><span class="hand">👆</span><span class="en">Swipe to continue</span><span class="ta">ஸ்வைப் செய்யவும்</span></div>
+  </main>
+
+  <nav class="navbar" aria-label="Slides">
+    <button class="arrow" id="prevBtn" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4L10.8 12z"/></svg></button>
+    <div class="nav-mid">
+      <div class="dots" id="dots"></div>
+      <div class="slide-label" id="slideLabel"></div>
+    </div>
+    <button class="arrow" id="nextBtn" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M8.6 16.6 10 18l6-6-6-6-1.4 1.4 4.6 4.6z"/></svg></button>
+  </nav>
+</div>
+
+<script>
+(() => {
+  const $ = (s, el = document) => el.querySelector(s);
+  const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+  const store = {
+    get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+
+  /* ---------------- Language ---------------- */
+  let lang = 'en';
+  function setLang(l) {
+    lang = l;
+    document.body.classList.toggle('lang-ta', l === 'ta');
+    document.documentElement.lang = l;
+    document.title = l === 'ta' ? 'அகிலா ♥ வினோத் · திருமண அழைப்பிதழ்' : 'Akila ♥ Vinod · Wedding Invitation';
+    updateLabel();
+  }
+  $('#langBtn').addEventListener('click', () => setLang(lang === 'ta' ? 'en' : 'ta'));
+
+  /* ---------------- Slider ---------------- */
+  const track = $('#track'), viewport = $('#viewport');
+  const slides = $$('.slide', track);
+  const dotsWrap = $('#dots');
+  let idx = 0;
+
+  slides.forEach((s, i) => {
+    const b = document.createElement('button');
+    b.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    b.addEventListener('click', () => go(i));
+    dotsWrap.appendChild(b);
+  });
+  const dots = $$('button', dotsWrap);
+
+  function updateLabel() {
+    const s = slides[idx];
+    const lbl = $('#slideLabel');
+    lbl.textContent = String(idx + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0') + '  ·  ' + (lang === 'ta' ? s.dataset.ta : s.dataset.en);
+    lbl.classList.toggle('ta', lang === 'ta');
+    lbl.style.display = '';
+  }
+  function go(i) {
+    idx = Math.max(0, Math.min(slides.length - 1, i));
+    track.style.transform = `translateX(${-idx * 100}%)`;
+    slides.forEach((s, j) => {
+      s.classList.toggle('active', j === idx);
+      s.setAttribute('aria-hidden', j === idx ? 'false' : 'true');
+    });
+    dots.forEach((d, j) => d.classList.toggle('on', j === idx));
+    $('#prevBtn').disabled = idx === 0;
+    $('#nextBtn').disabled = idx === slides.length - 1;
+    const inner = $('.card-inner', slides[idx]); if (inner) inner.scrollTop = 0;
+    updateLabel();
+    if (idx > 0) hideHint();
+  }
+  $('#prevBtn').addEventListener('click', () => go(idx - 1));
+  $('#nextBtn').addEventListener('click', () => go(idx + 1));
+  $$('[data-go]').forEach(b => b.addEventListener('click', () => go(+b.dataset.go)));
+  document.addEventListener('keydown', e => {
+    if (!$('#intro').classList.contains('gone')) return;
+    if (e.key === 'ArrowRight') go(idx + 1);
+    if (e.key === 'ArrowLeft') go(idx - 1);
+  });
+
+  // Swipe (touch + mouse drag). Vertical scrolling inside a card stays native.
+  let sx = 0, sy = 0, dx = 0, mode = null, pid = null, width = 1;
+  viewport.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    if (e.target.closest('a, button')) return;
+    sx = e.clientX; sy = e.clientY; dx = 0; mode = null; pid = e.pointerId;
+    width = viewport.clientWidth;
+  });
+  viewport.addEventListener('pointermove', e => {
+    if (e.pointerId !== pid) return;
+    const mx = e.clientX - sx, my = e.clientY - sy;
+    if (!mode) {
+      if (Math.abs(mx) < 8 && Math.abs(my) < 8) return;
+      mode = Math.abs(mx) > Math.abs(my) ? 'x' : 'y';
+      if (mode === 'x') { track.classList.add('dragging'); try { viewport.setPointerCapture(pid); } catch (err) {} }
+    }
+    if (mode !== 'x') return;
+    dx = mx;
+    if ((idx === 0 && dx > 0) || (idx === slides.length - 1 && dx < 0)) dx *= 0.3; // edge resistance
+    track.style.transform = `translateX(calc(${-idx * 100}% + ${dx}px))`;
+  });
+  function endDrag(e) {
+    if (e.pointerId !== pid) return;
+    pid = null;
+    if (mode === 'x') {
+      track.classList.remove('dragging');
+      const threshold = Math.min(80, width * 0.18);
+      if (dx < -threshold) go(idx + 1);
+      else if (dx > threshold) go(idx - 1);
+      else go(idx);
+    }
+    mode = null;
+  }
+  viewport.addEventListener('pointerup', endDrag);
+  viewport.addEventListener('pointercancel', endDrag);
+
+  /* ---------------- Swipe hint ---------------- */
+  let hintTimer;
+  function showHint() {
+    $('#swipeHint').classList.add('show');
+    hintTimer = setTimeout(hideHint, 5000);
+  }
+  function hideHint() { clearTimeout(hintTimer); $('#swipeHint').classList.remove('show'); }
+
+  /* ---------------- Petals ---------------- */
+  const petals = $('#petals');
+  const colors = ['#c2185b', '#e75480', '#f29b1d', '#fff3d6', '#d4af37'];
+  for (let i = 0; i < 10; i++) {
+    const p = document.createElement('span');
+    p.className = 'petal';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.background = colors[i % colors.length];
+    p.style.animationDuration = (9 + Math.random() * 9) + 's';
+    p.style.animationDelay = (-Math.random() * 18) + 's';
+    const s = 0.7 + Math.random() * 0.7;
+    p.style.width = 12 * s + 'px'; p.style.height = 10 * s + 'px';
+    petals.appendChild(p);
+  }
+
+  /* ---------------- Countdown ---------------- */
+  const WEDDING = new Date('2026-11-11T09:00:00+05:30').getTime();
+  const cdEls = { d: $('[data-cd=d]'), h: $('[data-cd=h]'), m: $('[data-cd=m]'), s: $('[data-cd=s]') };
+  function tick() {
+    let diff = WEDDING - Date.now();
+    if (diff <= 0) {
+      $('#countdown').hidden = true; $('#marriedMsg').hidden = false; return;
+    }
+    const d = Math.floor(diff / 864e5); diff -= d * 864e5;
+    const h = Math.floor(diff / 36e5); diff -= h * 36e5;
+    const m = Math.floor(diff / 6e4); diff -= m * 6e4;
+    const s = Math.floor(diff / 1e3);
+    cdEls.d.textContent = d; cdEls.h.textContent = String(h).padStart(2, '0');
+    cdEls.m.textContent = String(m).padStart(2, '0'); cdEls.s.textContent = String(s).padStart(2, '0');
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* ---------------- Calendar ---------------- */
+  const EV = {
+    title: 'Akila & Vinod – Wedding',
+    start: '20261111T033000Z', end: '20261111T050000Z',
+    location: 'KM Palace, Sriperumbudur – Kundrathur Highway, Sirukalathur Main Road, Kundrathur, Chennai – 600 069',
+    details: 'Wedding of Selvi. P. Akilandeswari & Selvan. L. Vinod Kumar. Muhurtham 9.00 – 10.30 am. Map: https://maps.app.goo.gl/hmMqf78U1DjGH6Jx9'
+  };
+  $('#gcal').href = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+    + '&text=' + encodeURIComponent(EV.title)
+    + '&dates=' + EV.start + '/' + EV.end
+    + '&location=' + encodeURIComponent(EV.location)
+    + '&details=' + encodeURIComponent(EV.details);
+  $('#icsBtn').addEventListener('click', () => {
+    const esc = s => s.replace(/([,;])/g, '\\$1');
+    const ics = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Akila Vinod//Wedding//EN', 'BEGIN:VEVENT',
+      'UID:akila-vinod-wedding-20261111', 'DTSTAMP:20261001T000000Z',
+      'DTSTART:' + EV.start, 'DTEND:' + EV.end,
+      'SUMMARY:' + esc(EV.title), 'LOCATION:' + esc(EV.location), 'DESCRIPTION:' + esc(EV.details),
+      'END:VEVENT', 'END:VCALENDAR'
+    ].join('\r\n');
+    const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' }));
+    const a = document.createElement('a'); a.href = url; a.download = 'Akila-Vinod-Wedding.ics';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  });
+
+  /* ---------------- Share ---------------- */
+  $('#shareBtn').addEventListener('click', async () => {
+    const data = { title: 'Akila ♥ Vinod · Wedding Invitation', text: 'You are invited to our wedding on 11 · 11 · 2026 at KM Palace, Chennai.', url: location.href };
+    try {
+      if (navigator.share) await navigator.share(data);
+      else { await navigator.clipboard.writeText(location.href); alert(lang === 'ta' ? 'இணைப்பு நகலெடுக்கப்பட்டது!' : 'Link copied!'); }
+    } catch (e) {}
+  });
+
+  /* ---------------- Music ----------------
+     Plays assets/music.mp3 softly on loop (fades in). If the file is missing, the music button is hidden. */
+  const Music = (() => {
+    const VOL = 0.4;
+    const audio = new Audio('assets/music.mp3');
+    audio.loop = true; audio.preload = 'auto'; audio.volume = 0;
+    let playing = false, available = true, fadeTimer = null;
+    audio.addEventListener('error', () => {
+      available = false; playing = false;
+      $('#musicBtn').style.display = 'none';
+    });
+    function fadeTo(target, ms, done) {
+      clearInterval(fadeTimer);
+      const startVol = audio.volume, steps = Math.max(1, Math.round(ms / 50));
+      let i = 0;
+      fadeTimer = setInterval(() => {
+        i++;
+        audio.volume = Math.min(1, Math.max(0, startVol + (target - startVol) * (i / steps)));
+        if (i >= steps) { clearInterval(fadeTimer); if (done) done(); }
+      }, 50);
+    }
+    async function play() {
+      if (!available) return;
+      playing = true;
+      try { await audio.play(); fadeTo(VOL, 2000); } catch (e) { playing = false; }
+    }
+    function pause() {
+      playing = false;
+      fadeTo(0, 500, () => { if (!playing) audio.pause(); });
+    }
+    return { play, pause, get playing() { return playing; } };
+  })();
+
+  const musicBtn = $('#musicBtn');
+  let userPaused = false;
+  function syncMusicBtn() { musicBtn.classList.toggle('playing', Music.playing); }
+  musicBtn.addEventListener('click', () => {
+    if (Music.playing) { Music.pause(); userPaused = true; syncMusicBtn(); }
+    else { userPaused = false; Music.play().then(syncMusicBtn); syncMusicBtn(); }
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden && Music.playing) { Music.pause(); syncMusicBtn(); }
+    else if (!document.hidden && !userPaused && $('#intro').classList.contains('gone') && !Music.playing) { Music.play().then(syncMusicBtn); }
+  });
+
+  /* ---------------- Opening ---------------- */
+  $('#openBtn').addEventListener('click', () => {
+    $('#intro').classList.add('gone');
+    Music.play().then(syncMusicBtn); syncMusicBtn();
+    go(0);
+    setTimeout(showHint, 1600);
+  });
+
+  setLang('en');
+  go(0);
+})();
+</script>
+</body>
+</html>
