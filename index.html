@@ -127,7 +127,10 @@
   .h-md { font-size: 42px; }
   .script.ta.tname { font-family: 'Kavivanar', serif; line-height: 1.4; }
   .ta.h-xl.tname { font-size: 44px; } .ta.h-lg.tname { font-size: 30px; white-space: nowrap; }
-  .ta.h-xl { font-size: 32px; } .ta.h-lg { font-size: 27px; } .ta.h-md { font-size: 23px; }
+  .ta.h-xl { font-size: 32px; }
+  /* names that must stay on one line and never clip (e.g. last screen) */
+  .script.fit-name { font-size: clamp(40px, 14vw, 66px); white-space: nowrap; padding: 0 .25em; max-width: 100%; }
+  .script.ta.tname.fit-name { font-size: clamp(26px, 9vw, 42px); } .ta.h-lg { font-size: 27px; } .ta.h-md { font-size: 23px; }
   .lead { font-style: italic; font-weight: 600; font-size: 19px; line-height: 1.45; color: var(--maroon-soft); margin: 0; }
   .lead.ta { font-style: normal; font-weight: 500; font-size: 15px; line-height: 1.85; }
   .body-ta { font-family: 'Noto Serif Tamil', serif; font-size: 14px; line-height: 1.95; color: var(--maroon-soft); text-align: center; margin: 0; }
@@ -805,8 +808,8 @@
             <div class="gap-m"></div>
             <div class="eyebrow en reveal d2">We can’t wait to celebrate with you</div>
             <div class="eyebrow ta reveal d2">தங்கள் வருகையை எதிர்நோக்கும்</div>
-            <div class="script en h-xl reveal d3" style="margin-top:10px">Akila <span style="font-family:'Great Vibes';color:var(--rose);font-size:.5em">♥</span> Vinod</div>
-            <div class="script ta h-xl tname reveal d3" style="margin-top:10px">அகிலா <span style="color:var(--rose);font-size:.7em">♥</span> வினோத்</div>
+            <div class="script en h-xl fit-name reveal d3" style="margin-top:10px">Akila <span style="font-family:'Great Vibes';color:var(--rose);font-size:.5em">♥</span> Vinod</div>
+            <div class="script ta h-xl tname fit-name reveal d3" style="margin-top:10px">அகிலா <span style="color:var(--rose);font-size:.7em">♥</span> வினோத்</div>
             <div class="date-badge reveal d4">11 · 11 · 2026</div>
             <div class="cal-row reveal d5" style="margin-top:22px">
               <button class="btn" id="shareBtn"><span class="en">Share Invitation</span><span class="ta">பகிர்க</span></button>
