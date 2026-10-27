@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Akila ♥ Vinod · Wedding Invitation</title>
 <meta name="description" content="Akilandeswari & Vinod Kumar — Wedding on Wednesday, 11 November 2026 at KM Palace, Kundrathur, Chennai.">
-<meta name="theme-color" content="#4a1218">
+<meta name="theme-color" content="#6b1934">
 <!-- Link preview (WhatsApp / Facebook) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Akila ♥ Vinod · Wedding Invitation">
@@ -31,6 +31,10 @@
     --marigold: #f29b1d;
     --topbar: 56px;
     --navbar: 64px;
+    --bar-bg:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23e6c77a' stroke-opacity='.16' stroke-width='1'%3E%3Cpath d='M36 24c4 5 4 19 0 24c-4-5-4-19 0-24z'/%3E%3Cpath d='M24 36c5-4 19-4 24 0c-5 4-19 4-24 0z'/%3E%3Ccircle cx='36' cy='36' r='2.5'/%3E%3C/g%3E%3Cg fill='%23e6c77a' fill-opacity='.18'%3E%3Ccircle cx='0' cy='0' r='1.6'/%3E%3Ccircle cx='72' cy='0' r='1.6'/%3E%3Ccircle cx='0' cy='72' r='1.6'/%3E%3Ccircle cx='72' cy='72' r='1.6'/%3E%3C/g%3E%3C/svg%3E"),
+      radial-gradient(ellipse at 50% -40%, rgba(255,214,170,.22), transparent 70%),
+      linear-gradient(115deg, #3d0a1b 0%, #6b1934 32%, #94344f 50%, #6b1934 68%, #3d0a1b 100%);
   }
   * { box-sizing: border-box; }
   html, body { height: 100%; margin: 0; }
@@ -64,8 +68,7 @@
     height: var(--topbar); flex: none;
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 14px; padding-top: env(safe-area-inset-top);
-    background: var(--maroon); color: var(--gold-light);
-    border-bottom: 2px solid var(--gold);
+    background: var(--bar-bg); color: var(--gold-light);
     position: relative; z-index: 5;
   }
   .monogram { font-family: 'Great Vibes', cursive; font-size: 28px; line-height: 1; letter-spacing: 1px; }
@@ -233,8 +236,26 @@
     height: var(--navbar); flex: none; padding-bottom: env(safe-area-inset-bottom);
     display: flex; align-items: center; justify-content: space-between; gap: 6px;
     padding-left: 10px; padding-right: 10px;
-    background: var(--maroon); color: var(--gold-light); border-top: 2px solid var(--gold);
+    background: var(--bar-bg); color: var(--gold-light);
+    position: relative;
   }
+  /* Velvet bars: gold-foil edge + slow soft shimmer */
+  .topbar > *, .navbar > * { position: relative; z-index: 1; }
+  .topbar::before, .navbar::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(105deg, transparent 38%, rgba(255,232,180,.16) 50%, transparent 62%);
+    background-size: 260% 100%;
+    animation: sheen 8s ease-in-out infinite;
+  }
+  .navbar::before { animation-delay: 4s; }
+  @keyframes sheen { 0% { background-position: 130% 0; } 55%, 100% { background-position: -30% 0; } }
+  .topbar::after, .navbar::after {
+    content: ""; position: absolute; left: 0; right: 0; height: 2px; pointer-events: none;
+    background: linear-gradient(90deg, #7a5418, #f3dc9c 20%, #b8893a 40%, #fff1c7 55%, #b8893a 72%, #f3dc9c 88%, #7a5418);
+    box-shadow: 0 0 6px rgba(243,220,156,.35);
+  }
+  .topbar::after { bottom: 0; }
+  .navbar::after { top: 0; }
   .arrow { width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(230,199,122,.55); display: grid; place-items: center; color: var(--gold-light); }
   .arrow svg { width: 18px; height: 18px; fill: currentColor; }
   .arrow:disabled { opacity: .3; cursor: default; }
@@ -356,6 +377,7 @@
   @media (prefers-reduced-motion: reduce) {
     .track, .reveal, .intro { transition: none !important; }
     .petals, .swipe-hint .hand { animation: none !important; display: none; }
+    .topbar::before, .navbar::before { animation: none !important; display: none; }
     .env, .open-btn, .env-flap, .env-seal { animation: none !important; transition: none !important; }
   }
 </style>
