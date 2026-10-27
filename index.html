@@ -100,6 +100,8 @@
 
   /* ---------- Slider ---------- */
   .viewport { flex: 1; position: relative; overflow: hidden; touch-action: pan-y; }
+  .viewport * { touch-action: pan-y; }
+  .track { overscroll-behavior-x: none; }
   .track { display: flex; height: 100%; will-change: transform; transition: transform .55s cubic-bezier(.22,.8,.24,1); }
   .track.dragging { transition: none; }
   .slide { flex: 0 0 100%; height: 100%; position: relative; padding: 14px; }
@@ -925,41 +927,62 @@
     if (e.key === 'ArrowLeft') go(idx - 1);
   });
 
-  // Swipe (touch + mouse drag). Vertical scrolling inside a card stays native.
-  let sx = 0, sy = 0, dx = 0, mode = null, pid = null, width = 1;
-  viewport.addEventListener('pointerdown', e => {
-    if (e.pointerType === 'mouse' && e.button !== 0) return;
-    if (e.target.closest('a, button')) return;
-    sx = e.clientX; sy = e.clientY; dx = 0; mode = null; pid = e.pointerId;
+  // Swipe. Touch events (with preventDefault once the gesture is horizontal) work on every
+  // mobile browser; pointer events are used only for mouse dragging on desktop.
+  // Vertical scrolling inside a card stays native.
+  let sx = 0, sy = 0, dx = 0, mode = null, active = false, width = 1;
+  function dragStart(x, y) {
+    sx = x; sy = y; dx = 0; mode = null; active = true;
     width = viewport.clientWidth;
-  });
-  viewport.addEventListener('pointermove', e => {
-    if (e.pointerId !== pid) return;
-    const mx = e.clientX - sx, my = e.clientY - sy;
+  }
+  // returns true when the gesture is a horizontal swipe (caller should block native handling)
+  function dragMove(x, y) {
+    if (!active) return false;
+    const mx = x - sx, my = y - sy;
     if (!mode) {
-      if (Math.abs(mx) < 8 && Math.abs(my) < 8) return;
-      mode = Math.abs(mx) > Math.abs(my) ? 'x' : 'y';
-      if (mode === 'x') { track.classList.add('dragging'); try { viewport.setPointerCapture(pid); } catch (err) {} }
+      if (Math.abs(mx) < 8 && Math.abs(my) < 8) return false;
+      mode = Math.abs(mx) > Math.abs(my) * 0.8 ? 'x' : 'y';
+      if (mode === 'x') track.classList.add('dragging');
     }
-    if (mode !== 'x') return;
+    if (mode !== 'x') return false;
     dx = mx;
     if ((idx === 0 && dx > 0) || (idx === slides.length - 1 && dx < 0)) dx *= 0.3; // edge resistance
     track.style.transform = `translateX(calc(${-idx * 100}% + ${dx}px))`;
-  });
-  function endDrag(e) {
-    if (e.pointerId !== pid) return;
-    pid = null;
+    return true;
+  }
+  function dragEnd() {
+    if (!active) return;
+    active = false;
     if (mode === 'x') {
       track.classList.remove('dragging');
-      const threshold = Math.min(80, width * 0.18);
+      const threshold = Math.min(60, width * 0.15);
       if (dx < -threshold) go(idx + 1);
       else if (dx > threshold) go(idx - 1);
       else go(idx);
     }
     mode = null;
   }
-  viewport.addEventListener('pointerup', endDrag);
-  viewport.addEventListener('pointercancel', endDrag);
+
+  // Touch (phones / tablets)
+  viewport.addEventListener('touchstart', e => {
+    if (e.touches.length !== 1) { dragEnd(); return; }
+    dragStart(e.touches[0].clientX, e.touches[0].clientY);
+  }, { passive: true });
+  viewport.addEventListener('touchmove', e => {
+    if (!active || e.touches.length !== 1) return;
+    if (dragMove(e.touches[0].clientX, e.touches[0].clientY) && e.cancelable) e.preventDefault();
+  }, { passive: false });
+  viewport.addEventListener('touchend', dragEnd);
+  viewport.addEventListener('touchcancel', dragEnd);
+
+  // Mouse (desktop)
+  viewport.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse' || e.button !== 0) return;
+    if (e.target.closest('a, button')) return;
+    dragStart(e.clientX, e.clientY);
+  });
+  window.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') dragMove(e.clientX, e.clientY); });
+  window.addEventListener('pointerup', e => { if (e.pointerType === 'mouse') dragEnd(); });
 
   /* ---------------- Swipe hint ---------------- */
   let hintTimer;
