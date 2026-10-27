@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%235a1a1f'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23e6c77a' font-family='serif'%3EA%E2%99%A5V%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cinzel:wght@500;600;700&family=Noto+Serif+Tamil:wght@400;500;600;700&family=Kavivanar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italianno&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cinzel:wght@500;600;700&family=Cinzel+Decorative:wght@700&family=Noto+Serif+Tamil:wght@400;500;600;700&family=Kavivanar&display=swap" rel="stylesheet">
 <style>
   :root {
     --maroon: #5a1a1f;
@@ -71,8 +71,14 @@
     background: var(--bar-bg); color: var(--gold-light);
     position: relative; z-index: 5;
   }
-  .monogram { font-family: 'Great Vibes', cursive; font-size: 28px; line-height: 1; letter-spacing: 1px; }
-  .monogram b { font-family: serif; font-weight: 400; font-size: 16px; color: #ff8a9a; margin: 0 4px; vertical-align: 4px; }
+  .monogram {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif; font-weight: 700; font-size: 21px; line-height: 1; letter-spacing: 2px;
+    display: inline-flex; align-items: center;
+    background: linear-gradient(180deg, #fff3c9 0%, #f0d48a 40%, #c8963e 62%, #f6e2a6 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,.35));
+  }
+  .monogram b { font-family: serif; font-weight: 400; font-size: 11px; color: #ff9fb2; -webkit-text-fill-color: #ff9fb2; margin: 0 7px; }
   .top-actions { display: flex; gap: 8px; align-items: center; }
   .pill {
     height: 34px; padding: 0 12px; border-radius: 999px;
